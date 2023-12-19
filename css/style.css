@@ -1,7 +1,7 @@
 body, html {
 	font-family: 'Open Sans', serif;
 	text-rendering: optimizeLegibility !important;
-	-webkit-font-smoothing: antialiased !important;
+	
 	color: #777;
 	font-weight: 400;
 	width: 100% !important;
@@ -62,8 +62,7 @@ ul, ol {
 }
 ul, ol {
 	padding: 0;
-	webkit-padding: 0;
-	moz-padding: 0;
+	
 }
 
 /* Navigation */
@@ -257,11 +256,12 @@ width: 500px;
 /* Menu Section */
 #rmenu .container {
   text-align: center !important;
+                        
 }
 #rmenu img {
   display: block !important;
   margin-left: 350px;
-  max-width:120% !important;
+  max-width:100% !important;
   height: auto !important;
 }
 .img-responsive {
@@ -304,6 +304,7 @@ width: 500px;
 #team .team-img {
 	display: inline-block;
 	position: relative;
+    
 }
 
 /* Contact Section */
@@ -384,4 +385,42 @@ opacity: 1;
 }
 #footer a:hover {
 	color: #eee;
+}
+  /* Mobile Styles */
+        @media only screen and (max-width: 767px) {
+            body, html {
+                font-size: 14px;
+            }
+
+            #menu.navbar-default .navbar-nav > li > a {
+                margin: 0 10px;
+            }
+
+            #menu .navbar-brand img {
+                height: 40px;
+                margin-top: -12px;
+            }
+
+            #rmenu img {
+                margin-left: 0;
+                max-width: 100%;
+            }
+
+            #about .about-text p {
+                margin-left: 0;
+                width: auto;
+            }
+
+            #about .about-img {
+                width: 100%;
+                margin: 20px 0;
+            }
+
+            #team .team-img {
+                margin-top: 20px;
+            }
+
+            #contact h3 {
+                font-size: 16px;
+            }
 }
